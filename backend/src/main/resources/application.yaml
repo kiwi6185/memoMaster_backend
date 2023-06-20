@@ -1,0 +1,18 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: backend
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/zjdxm?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  jackson:
+    default-property-inclusion: non_null # JSON处理时忽略非空字段
+mybatis-plus:
+  type-aliases-package: com.casey.backend.entity # 别名扫描包
+
